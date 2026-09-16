@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="rail rail-top" aria-hidden="true"></div>
+
+  <main class="stage">
+
+    <section class="brand-panel">
+      <div class="brand-mark">
+        <svg class="logo-glyph" width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M4 14L14 4H52L42 14H4Z" fill="url(#gradA)"/>
+          <path d="M4 30L14 20H38L28 30H4Z" fill="url(#gradB)"/>
+          <path d="M18 52V20L28 30V52L18 52Z" fill="url(#gradC)"/>
+          <defs>
+<tbody>
+    <tr>
+     <img src="image.png" alt="" width="90">
+    </tr>
+</tbody>
+          </defs>
+        </svg>
+        <h1 class="wordmark">Tech<span class="fx">Flow</span></h1>
+      </div>
+
+      <p class="tagline">Gestão de ordens de serviço, do chamado à entrega.</p>
+
+      <ul class="role-list">
+        <li><span class="role-dot"></span>Administrador — visão completa das operações</li>
+        <li><span class="role-dot"></span>Técnico — atendimento e execução das OS</li>
+        <li><span class="role-dot"></span>Cliente — acompanhamento em tempo real</li>
+      </ul>
+    </section>
+
+    <section class="form-panel" aria-labelledby="login-heading">
+      <div class="form-card">
+        <span class="form-eyebrow" id="login-heading">Acessar conta</span>
+
+        <form class="login-form" novalidate>
+          <label class="field">
+            <span class="field-label">E-mail</span>
+            <input type="email" name="email" placeholder="voce@gmail.com" autocomplete="email" required>
+          </label>
+
+          <label class="field">
+            <span class="field-label">Senha</span>
+            <input type="password" name="password" placeholder="••••••••" autocomplete="current-password" required>
+          </label>
+
+          <div class="form-row">
+            <label class="remember">
+              <input type="checkbox" name="remember">
+              <span>Lembrar de mim</span>
+            </label>
+            <a href="#" class="link-muted">Esqueceu a senha?</a>
+          </div>
+
+          <div class="actions">
+            <button type="submit" class="btn btn-primary">Login</button>
+            <button type="button" class="btn btn-ghost">Criar uma conta</button>
+          </div>
+        </form>
+      </div>
+
+      <p class="copyright">© TechFlow — todos os direitos reservados.</p>
+    </section>
+
+  </main>
+
+  <div class="rail rail-bottom" aria-hidden="true"></div>
+
+</body>
+</html>
