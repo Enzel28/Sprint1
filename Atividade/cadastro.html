@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>TechFlow — Criar conta</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,11 +22,18 @@
           <path d="M4 30L14 20H38L28 30H4Z" fill="url(#gradB)"/>
           <path d="M18 52V20L28 30V52L18 52Z" fill="url(#gradC)"/>
           <defs>
-<tbody>
-    <tr>
-     <img src="image.png" alt="" width="90">
-    </tr>
-</tbody>
+            <linearGradient id="gradA" x1="4" y1="4" x2="52" y2="14" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#22D3EE"/>
+              <stop offset="1" stop-color="#2F9CF6"/>
+            </linearGradient>
+            <linearGradient id="gradB" x1="4" y1="20" x2="38" y2="30" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#2F9CF6"/>
+              <stop offset="1" stop-color="#7C5CFC"/>
+            </linearGradient>
+            <linearGradient id="gradC" x1="18" y1="20" x2="28" y2="52" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#7C5CFC"/>
+              <stop offset="1" stop-color="#2F9CF6"/>
+            </linearGradient>
           </defs>
         </svg>
         <h1 class="wordmark">Tech<span class="fx">Flow</span></h1>
@@ -41,32 +48,46 @@
       </ul>
     </section>
 
-    <section class="form-panel" aria-labelledby="login-heading">
+    <section class="form-panel" aria-labelledby="signup-heading">
       <div class="form-card">
-        <span class="form-eyebrow" id="login-heading">Acessar conta</span>
+        <span class="form-eyebrow" id="signup-heading">Criar conta</span>
 
         <form class="login-form" novalidate>
+          <label class="field">
+            <span class="field-label">Nome completo</span>
+            <input type="text" name="name" placeholder="Seu nome" autocomplete="name" required>
+          </label>
+
           <label class="field">
             <span class="field-label">E-mail</span>
             <input type="email" name="email" placeholder="voce@gmail.com" autocomplete="email" required>
           </label>
 
           <label class="field">
-            <span class="field-label">Senha</span>
-            <input type="password" name="password" placeholder="••••••••" autocomplete="current-password" required>
+            <span class="field-label">Perfil de acesso</span>
+            <select name="role" required>
+              <option value="" disabled selected>Selecione um perfil</option>
+              <option value="admin">Administrador</option>
+              <option value="tecnico">Técnico</option>
+              <option value="cliente">Cliente</option>
+            </select>
           </label>
 
-          <div class="form-row">
-            <label class="remember">
-              <input type="checkbox" name="remember">
-              <span>Lembrar de mim</span>
+          <div class="field-pair">
+            <label class="field">
+              <span class="field-label">Senha</span>
+              <input type="password" name="password" placeholder="••••••••" autocomplete="new-password" required>
             </label>
-            <a href="#" class="link-muted">Esqueceu a senha?</a>
+
+            <label class="field">
+              <span class="field-label">Confirmar senha</span>
+              <input type="password" name="password_confirm" placeholder="••••••••" autocomplete="new-password" required>
+            </label>
           </div>
 
           <div class="actions">
-            <button type="submit" class="btn btn-primary">Login</button>
-            <button type="button" class="btn btn-ghost">Criar uma conta</button>
+            <button type="submit" class="btn btn-primary">Criar conta</button>
+            <a href="index.html" class="btn btn-ghost">Já tenho conta</a>
           </div>
         </form>
       </div>
@@ -77,8 +98,6 @@
   </main>
 
   <div class="rail rail-bottom" aria-hidden="true"></div>
-
-
 
 </body>
 </html>

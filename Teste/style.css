@@ -1,0 +1,51 @@
+.field input,
+.field select {
+  border: none;
+  border-radius: var(--radius-sm);
+  padding: 13px 14px;
+  font-size: 15px;
+  font-family: var(--font-body);
+  color: var(--field-text);
+  background: linear-gradient(135deg, var(--field-bg) 60%, var(--field-bg-2) 100%);
+  outline: none;
+  transition: box-shadow 0.15s ease;
+  width: 100%;
+  appearance: none;
+}
+
+.field select {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='%2322243A'><path d='M5.5 7.5l4.5 4.5 4.5-4.5z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 16px;
+  padding-right: 36px;
+}
+
+.field input::placeholder { color: var(--field-ph); }
+
+.field input:focus,
+.field select:focus {
+  box-shadow: 0 0 0 3px rgba(47, 156, 246, 0.45);
+}
+
+.btn {
+  font-family: var(--font-body);
+  font-size: 14.5px;
+  font-weight: 600;
+  padding: 12px 18px;
+  border-radius: var(--radius-sm);
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: transform 0.12s ease, filter 0.12s ease, background 0.12s ease;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Signup: dois campos lado a lado */
+.field-pair {
+  display: flex;
+  gap: 12px;
+}
+.field-pair .field { flex: 1; }

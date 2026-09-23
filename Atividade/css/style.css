@@ -47,7 +47,6 @@ body {
   flex-direction: column;
 }
 
-/* Decorative top/bottom rails, echoing the reference frame */
 .rail {
   height: 6px;
   width: 100%;
@@ -144,9 +143,6 @@ body {
   background: var(--grad);
 }
 
-/* ---------------------------------------------------
-   Form panel
---------------------------------------------------- */
 .form-card {
   width: 100%;
   max-width: 360px;
@@ -281,9 +277,6 @@ body {
   color: var(--ink-faint);
 }
 
-/* ---------------------------------------------------
-   Responsive
---------------------------------------------------- */
 @media (max-width: 860px) {
   .stage {
     grid-template-columns: 1fr;
